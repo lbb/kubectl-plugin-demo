@@ -1,0 +1,9 @@
+# The name we use the plugin as
+name: foo
+
+# Required short explanation to display in kubectl
+shortDesc: Example plugin
+
+# The actual entry point
+command: env
+
