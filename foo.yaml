@@ -1,9 +1,8 @@
 apiVersion: krew.googlecontainertools.github.com/v1alpha1
 kind: Plugin
 metadata:
-  name: foo # This must also be the top level command of the plugin
+  name: foo
 spec:
-  # Version does not follow any conventions and is not functional.
   version: "v0.0.1"
   shortDescription: Foo is a demo plugin
   description: |
@@ -16,11 +15,10 @@ spec:
     * env
   platforms:
   - head: https://github.com/lbb/kubectl-plugin-demo/archive/master.zip
-    # This is used during installation. It uses file Globs to copy required files.
     files:
     - from: "*/*"
       to: "."
-    selector: # A regular Kubernetes label selector
+    selector:
       matchExpressions:
       - {key: os, operator: In, values: [darwin, linux]} 
 
