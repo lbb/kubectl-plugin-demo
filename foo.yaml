@@ -15,6 +15,7 @@ spec:
     * env
   platforms:
   - head: https://github.com/lbb/kubectl-plugin-demo/archive/master.zip
+    bin: kubectl-foo
     files:
     - from: "*/*"
       to: "."

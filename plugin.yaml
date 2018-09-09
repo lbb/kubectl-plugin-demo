@@ -1,9 +1,0 @@
-# The name the plugin is called
-name: foo
-
-# Required, short explanation to display in kubectl
-shortDesc: Example plugin
-
-# The actual program entry point
-command: env
-
